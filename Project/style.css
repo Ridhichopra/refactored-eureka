@@ -50,7 +50,7 @@ body,header,footer {
     padding-left: 30px;
     padding-right: 30px;
     background-color: rgb(218, 190, 245);
-    padding-top: 180px;
+    padding-top: 130px;
 }
 
 .text {
@@ -85,6 +85,28 @@ body,header,footer {
     color: azure;
 }
 
+.button {
+    background-color: rgb(164, 92, 197);
+    border: none;
+    color: rgb(250, 194, 214);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: rgb(177, 222, 222);
+    color: rgb(164, 92, 197);
+    border: 2px solid rgb(164, 92, 197);
+}
+
 .hover-effect:hover {
     color: blue;
     text-decoration: solid;
@@ -115,7 +137,7 @@ body,header,footer {
 }
 
 h1 {
-    color: azure;
+    color: rgb(242, 79, 147);
     font-size: 80px;
     font-weight: bolder;
 }
@@ -136,6 +158,19 @@ h3 {
     color: azure;
     font-size: 50px;
     font-weight: lighter;
+}
+
+h5 {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .container3 {
@@ -176,4 +211,18 @@ footer {
     color: rgb(45, 99, 20);
     text-decoration: solid;
     border: 2px solid rgb(45, 99, 20);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 200px;
+    height: 500px;
+}
+
+.1l {
+
 }
