@@ -32,7 +32,7 @@ const people = [
   const clearButton = document.getElementById('clear')
   
   //---------- RENDER NAMES TO PAGE
-  function renderNamesToPage(data) {
+  function renderNamesToPage(results) {
     // iterate of the dataset
     for(let i = 0; i < results.length; i++){
         // create the list item
@@ -46,13 +46,36 @@ const people = [
     }
   }
   renderNamesToPage(people);
-  
+
   //---------- SEARCH DATASET FOR SPECIFIC NAME
-  function searchNames(e) {}
+  function searchNames(event) {
+    console.log(event.target.value)
+    let searchQuery = event.target.value;
+
+    const searchedName = people.filter(function(person){
+        if(searchQuery){
+            return person.name.includes(searchQuery)
+    }
+    })
+
+    displaySearched(searchedName)
+  }
   searchBar.addEventListener("keyup", searchNames);
   
   //---------- DISPLAY ONLY THE SPECIFIC NAME
-  function displaySearched(name) {}
+  function displaySearched(name) {
+    console.log('search value: ', names)
+
+    // iterate over the searched names 
+    for(let i = 0; i < names.length; i++){
+        // create a list item
+        let listItem = document.createElement('li')
+        //grab each name and add it to the list item
+        listItem.textContent = names[i].name
+        // append the search results to the unordered list
+        ul.appendChild(listItem)
+    }
+  }
   
   //---------- CLEAR LIST BEFORE RENDERING SPECIFIC NAME
   function clearList() {}
