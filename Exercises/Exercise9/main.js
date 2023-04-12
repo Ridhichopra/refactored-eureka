@@ -37,7 +37,21 @@ const flowers = [
 
 const ul = document.querySelector("ul");
 
-function renderFlowersToPage(results) {}
+function renderFlowersToPage(results) {
+    // iterate over the dataset
+    for(let i = 0; i<results.length; i++){
+        // create the list item
+        let listItem = document.createElement('li');
+        // add a class to each item of the results
+        listIten.classList.add('card', results[i].color)
+        // add the flower name
+        let title = document.createElement('h3');
+        title.textContent = results[i].name // Rose
+
+        ul.appendChild(listItem)
+        listItem.appendChild(title)
+    }
+}
 renderFlowersToPage(flowers);
 
 //---------- FILTER FLOWERS BY COLOR
