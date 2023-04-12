@@ -43,13 +43,23 @@ function renderFlowersToPage(results) {
         // create the list item
         let listItem = document.createElement('li');
         // add a class to each item of the results
-        listIten.classList.add('card', results[i].color)
+        listItem.classList.add('card', results[i].color)
         // add the flower name
-        let title = document.createElement('h3');
+        let title = document.createElement('h3')
         title.textContent = results[i].name // Rose
+        // add flower color
+        let color = document.createElement('p')
+        color.classList.add('results[i].color')
+        color.textContent = results[i].color 
+
+        // add flower image
+        let image = document.createElement('img')
+        image.setAttribute('src', results[i].image)
 
         ul.appendChild(listItem)
         listItem.appendChild(title)
+        listItem.appendChild(color)
+        listItem.appendChild(image)
     }
 }
 renderFlowersToPage(flowers);
