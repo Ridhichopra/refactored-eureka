@@ -63,8 +63,8 @@ const people = [
   searchBar.addEventListener("keyup", searchNames);
   
   //---------- DISPLAY ONLY THE SPECIFIC NAME
-  function displaySearched(name) {
-    console.log('search value: ', names)
+  function displaySearched(names) {
+    console.log('search value:', names)
 
     // iterate over the searched names 
     for(let i = 0; i < names.length; i++){
@@ -78,7 +78,9 @@ const people = [
   }
   
   //---------- CLEAR LIST BEFORE RENDERING SPECIFIC NAME
-  function clearList() {}
+  function clearList() {
+    ul.innerHTML = ""
+  }
   
   //---------- CLEAR FROM WITH BUTTON
   function clearSearchForm() {
