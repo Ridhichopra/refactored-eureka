@@ -5,9 +5,35 @@ h2{
 
 p {
     text-align: center;
+    text-decoration: none;
 }
 
 .bio {
     display: block;
-    block place-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    list-style: none;
+    padding: 0%;
+}
+
+.container {
+    border: 10px solid;
+    border-color: rgb(98, 129, 238);
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+li {
+    text-emphasis-color: pink;
+    text-decoration: none;
 }
