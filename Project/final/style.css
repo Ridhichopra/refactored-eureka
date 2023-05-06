@@ -69,6 +69,8 @@
   
   /* Add a grey background color on mouse-over */
   .btn:hover {
+    border: 2 px solid;
+    border-color: rgb(107, 107, 107);
     background-color: #000000;
   }
   
