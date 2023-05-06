@@ -4,13 +4,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Golos Text', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     text-decoration: none;
   }
   
   .navigation {
     display: flex;
-    height: 50px;
+    height: 60px;
     flex-wrap: nowrap;
     text-align: center;
 }
@@ -35,7 +35,7 @@
     width: 25%;
     font-size: 2vh;
     color: rgb(33, 15, 15);
-    background-color: rgb(255, 190, 160);
+    background-color: #94f5e5;
     
 }
 .guidetext:hover {
