@@ -1,84 +1,83 @@
 * {
-    box-sizing: border-box;
-  }
+box-sizing: border-box;
+}
 
-  h2 {
-    text-align: center;
-  }
+h2 {
+text-align: center;
+}
   
-  body {
-    padding: 20px;
-    font-family: Arial;
-  }
+body {
+padding: 20px;
+font-family: Arial;
+}
   
-  /* Center website */
-  .main {
-    max-width: 1000px;
-    margin: auto;
-  }
+/* Center website */
+.main {
+max-width: 1000px;
+margin: auto;
+}
   
-  h1 {
-    font-size: 50px;
-    word-break: break-all;
-  }
+h1 {
+font-size: 50px;
+word-break: break-all;
+}
   
-  .row {
-    margin: 8px -16px;
-  }
+.row {
+margin: 8px -16px;
+}
   
-  /* Add padding BETWEEN each column (if you want) */
-  .row,
-  .row > .column {
-    padding: 8px;
-  }
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+padding: 8px;
+}
   
-  /* Create three equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 33.33%;
-    display: none; /* Hide columns by default */
-  }
+/* Create three equal columns that floats next to each other */
+.column {
+float: left;
+width: 33.33%;
+display: none; /* Hide columns by default */
+}
   
-  /* Clear floats after rows */ 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+/* Clear floats after rows */ 
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
   
-  /* Content */
-  .content {
-    background-color: white;
-    padding: 10px;
-  }
+/* Content */
+.content {
+background-color: white;
+padding: 10px;
+}
   
-  /* The "show" class is added to the filtered elements */
-  .show {
-    display: block;
-  }
+/* The "show" class is added to the filtered elements */
+.show {
+display: block;
+}
   
-  /* Style the buttons */
-  .btn {
-    border: none;
-    outline: none;
-    padding: 0px 0px;
-    background-color: white;
-    cursor: pointer;
-    
-  }
+/* Style the buttons */
+.btn {
+border: none;
+outline: none;
+padding: 0px 0px;
+background-color: white;
+cursor: pointer; 
+}
   
-  /* Add a grey background color on mouse-over */
-  .btn:hover {
-    border: 2 px solid;
-    border-color: rgb(107, 107, 107);
-    background-color: #000000;
-  }
+/* Add a grey background color on mouse-over */
+.btn:hover {
+border: 2 px solid;
+border-color: rgb(107, 107, 107);
+background-color: #000000;
+}
   
-  /* Add a dark background color to the active button */
-  .btn.active {
-  border-color: black;
-  }
+/* Add a dark background color to the active button */
+.btn.active {
+border-color: black;
+}
 
-  body {
-    padding: 0%;
-  }
+body {
+padding: 0%;
+}
