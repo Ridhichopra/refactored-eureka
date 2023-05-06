@@ -1,3 +1,13 @@
 h2{
     color: pink;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.bio {
+    display: block;
+    block place-content: center;
 }
